@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Where R My People</title>
+<style>
+:root{--bg:#fff;--fg:#1c1b1f;--muted:#5f5d66;--card:#f4f3f7;--accent:#2a5bd7;--line:#dcdae2}
+@media (prefers-color-scheme:dark){:root{--bg:#141318;--fg:#e8e6ee;--muted:#a9a6b3;--card:#1f1e25;--accent:#8fb0ff;--line:#34323d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.8rem;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:1.2rem;margin:2em 0 .4em}
+p,li{margin:.5em 0}
+.muted{color:var(--muted);font-size:.9rem}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 16px;margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem;margin:12px 0}
+th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:8px 6px}
+th{color:var(--muted);font-weight:600}
+nav{font-size:.9rem;margin-bottom:8px}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Where R My People</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="delete-account.html">Delete your account</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="muted">Where R My People (also called Family Compass) &middot; Effective October 5, 2026</p>
+
+<p>Where R My People is an Android app that lets you and the family members or loved ones you choose point a compass at each other. This page explains exactly what the app collects, who can see it, how long it is kept, and how to delete it. We have tried to keep it short and plain.</p>
+
+<div class="card">
+<p><strong>The short version:</strong> your location is only read while the app is open on your screen. It is only sent anywhere while your &ldquo;Share with family&rdquo; switch is on, and then only family you have connected with can see it. It is deleted when you turn sharing off, leave the app, or sign out. There are no ads, no analytics, and we never sell your data.</p>
+</div>
+
+<h2>What we collect</h2>
+<table>
+<tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+<tr><td>Email address and password</td><td>To create your account and sign you in.</td><td>Google Firebase Authentication. Passwords are handled by Firebase; the app and its developer never see or store your password in readable form.</td></tr>
+<tr><td>Display name</td><td>So family you connect with see a name instead of your email.</td><td>Stored in the app&rsquo;s database (Google Cloud Firestore). Visible to other signed-in users of the app.</td></tr>
+<tr><td>Precise and approximate location (latitude, longitude, accuracy, time of reading)</td><td>To show you where you are, and, only if you turn sharing on, to let connected family point their compass at you.</td><td>Read on your phone while the app is open. Sent to Firestore <em>only</em> while your sharing switch is on.</td></tr>
+<tr><td>Your family connections (the user IDs of you and the other person, and when you connected)</td><td>So the app knows who is allowed to see your shared location.</td><td>Firestore. Visible only to the two people in the connection.</td></tr>
+<tr><td>Invite codes you create or accept (code, who created it, status, expiry, who accepted it)</td><td>To let you connect with someone.</td><td>Firestore.</td></tr>
+</table>
+
+<p>When you use the app, Google&rsquo;s Firebase services may also automatically process technical information such as your IP address and device details, in order to run the service and keep it secure. We do not use that information for anything else.</p>
+
+<h2>What we do not do</h2>
+<ul>
+<li>We do <strong>not</strong> collect your location in the background. When the app is not on your screen, it does not read your location.</li>
+<li>We do not show ads, and we do not use analytics or advertising tools.</li>
+<li>We do not sell, rent, or share your data with advertisers or data brokers.</li>
+<li>We do not access your contacts, photos, microphone, or camera.</li>
+</ul>
+
+<h2>Who can see your location</h2>
+<p>Only you, and only the family members you have connected with, and only while your sharing switch is on. Connections are mutual: either person can remove the connection at any time from the Family screen, which immediately stops them seeing your location. Turning off the switch stops everyone from seeing it.</p>
+<p>The app&rsquo;s database rules enforce this on the server, not just in the app: another person&rsquo;s account cannot read your shared location unless you are connected to them.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+<li><strong>Shared location:</strong> deleted as soon as you turn sharing off, leave the app (lock your phone or switch to another app), or sign out. While you are sharing, it is replaced with a fresh reading about every 30 seconds, and family&rsquo;s apps treat any reading older than 5 minutes as &ldquo;unavailable.&rdquo; If the app is force-stopped or your phone loses its connection while you are sharing, the last reading can remain stored until you next open the app (or delete your account), although it will show as unavailable to family after 5 minutes.</li>
+<li><strong>Account, display name, connections, and invites:</strong> kept until you delete your account or remove the connection.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>You can delete your account and all of the data above at any time, from inside the app (Account &rarr; Delete my account), or by emailing us. Full steps are on the <a href="delete-account.html">Delete your account</a> page. When you delete your account we delete your sign-in account, your display name, your shared location, your family connections, and the invite codes you created.</p>
+<p>One small leftover: if you accepted an invite that someone else created, that invite record keeps an anonymous ID number in a field recording who accepted it. It contains no name, email, or location, and is removed when the person who created it deletes it or their own account.</p>
+<p>Google may keep deleted data in backups or system logs for a limited time under its own retention practices.</p>
+
+<h2>Service providers</h2>
+<p>The app runs on Google Firebase (Authentication and Cloud Firestore) and Google Play services (for location). Google processes your data on our behalf to provide these services and is subject to its own <a href="https://policies.google.com/privacy">Privacy Policy</a> and the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Data is encrypted in transit between your phone and Google&rsquo;s servers.</p>
+
+<h2>Children</h2>
+<p>The app is not directed to children under 13, and you must be at least 13 to create an account. If you believe a child under 13 has created an account, email us and we will delete it.</p>
+
+<h2>Your choices</h2>
+<ul>
+<li>You can decline or revoke location permission at any time in your phone&rsquo;s Settings; the app will still open but cannot show or share your location.</li>
+<li>You can turn sharing off, remove a connection, or delete your account at any time.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>If we change this policy in a meaningful way, we will update the date at the top of this page. If a change affects how your location is used, we will also tell you in the app.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about your data: <a href="mailto:ai.bri.9087@gmail.com">ai.bri.9087@gmail.com</a>.</p>
+
+</main>
+</body>
+</html>
